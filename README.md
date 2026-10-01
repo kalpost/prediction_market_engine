@@ -147,5 +147,5 @@ At the end, PnL is marked to market as cash + inventory * fair probability (fina
 
 ## Things worth knowing
 
-- The default market maker parameters give a very wide spread. With `gamma = 0.35` and `kappa = 1.5`, the half-spread works out to roughly 0.6, so quotes mostly sit at the 0.01 / 0.99 clamps and fills are rare. That's why its PnL hovers near zero. Lowering `gamma` or raising `kappa` gives a more realistic spread.
+- The default market maker parameters give a very wide spread. With `gamma = 0.35` and `kappa = 1.5`, the half-spread works out to roughly 0.6, so quotes mostly sit at the 0.01 / 0.99 clamps and fills are rare. That's why its PnL hovers near zero. Raising `kappa` gives a more realistic spread.
 - The arbitrage numbers are idealized. The scanner assumes you can buy every leg at the best ask in full size at the same instant, with no slippage, or leg risk. Treat the profit as an upper bound.
